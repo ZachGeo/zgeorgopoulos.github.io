@@ -1,0 +1,280 @@
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 5rem;
+}
+
+.nav-link{
+    font-size: larger;
+}
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.8rem;
+}
+
+.icon_link a{
+    color: white;
+}
+
+.icon_link .fa-github:hover{
+    color: black;
+}
+
+.icon_link .fa-linkedin-in:hover{
+    color: #2867B2;
+}
+
+/* About */
+
+#about_top_section{
+    background-color: #2a3d4be7;
+}
+
+#name{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#job_title{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+#about_icon{
+    margin-right: 15px;
+    padding: 5px;
+}
+
+.flex_head:hover{
+    margin-left: 10px;
+}
+
+.skill_icon{
+    font-size: 24px;
+    cursor: pointer;
+    animation-duration: 500ms; 
+}
+
+.skill_icon .fa-python:hover{
+    color: #4B8BBE;
+}
+
+.skill_icon .fa-hashtag:hover{
+    color: black;
+}
+
+.skill_icon .fa-database:hover{
+    color: rgb(151, 92, 151);
+}
+
+.skill_icon .fa-git:hover{
+    color: #F1502F;
+}
+
+.skill_icon .fa-window-maximize:hover{
+    color: #143f63;
+}
+
+.skill_icon .fa-linux:hover{
+    color: rgb(238, 155, 53);
+}
+
+.typewriter h2 {
+    color: #fff;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .10em solid transparent; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .3s step-end 14;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 25% }
+}
+  
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(252, 255, 80) }
+}
+
+@media only screen and (max-width : 767px) {
+    .typewriter h2 {
+        animation: 
+          typing 3.5s steps(80, end),
+          blink-caret .3s step-end 14;
+    }
+    
+    /* The typing effect */
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+}
+
+.about_p{
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.wordCarousel div {
+    overflow: hidden;
+    position: relative;
+    float: right;
+    height: 60px;
+    padding-top: 25px;
+    margin-top: -10px;
+}
+.wordCarousel li {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: rgb(112, 112, 112);
+    font-weight: 700;
+    padding: 0;
+    height: 45px;
+    margin-bottom: 45px;
+    display: block;
+}
+
+.flip4 { animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+
+@keyframes flip4 {
+    0% { margin-top: -360px; }
+    5% { margin-top: -270px; }
+    25% { margin-top: -270px; }
+    30% { margin-top: -180px; }
+    50% { margin-top: -180px; }
+    55% { margin-top: -90px; }
+    75% { margin-top: -90px; }
+    80% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
+/* iPhone 6, 6s, 7 & 8 */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    
+    #about_head{
+        font-size: 24px;
+        margin-top: 12px;
+    }
+
+    .wordCarousel div {
+        margin-top: -16px;
+    }
+
+    .wordCarousel li {
+        font-size: 14px;
+    }
+}
+
+/* iPhone X/XS */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+    #about_head{
+        font-size: 24px;
+        margin-top: 14px;
+    }
+
+    .wordCarousel div {
+        margin-top: -14px;
+    }
+
+    .wordCarousel li {
+        font-size: 14px;
+    }
+}
+
+/* Galaxy S5 */
+@media only screen 
+    and (min-device-width: 360px) 
+    and (max-device-height: 640px) 
+    and (-webkit-device-pixel-ratio: 3)    
+    and (orientation : portrait) {
+
+    #about_head{
+        font-size: 24px;
+        margin-top: 15px;
+    }
+
+    .wordCarousel div {
+        margin-top: -15px;
+    }
+
+    .wordCarousel li {
+        font-size: 14px;
+    }
+}
+
+/* Galaxy S9 */
+@media only screen 
+    and (min-device-width: 360px) 
+    and (orientation: portrait){ 
+
+    #about_head{
+        font-size: 24px;
+        margin-top: 15px;
+    }
+
+    .wordCarousel div {
+        margin-top: -15px;
+    }
+
+    .wordCarousel li {
+        font-size: 14px;
+    }
+}
+
+/* iPad */
+@media only screen 
+    and (min-device-width: 481px) 
+    and (max-device-width: 1024px) 
+    and (orientation:portrait) {
+        
+    #about_head{
+        font-size: 36px;
+        margin-top: 5px;
+    }
+
+    .wordCarousel div {
+        margin-top: -12px;
+    }
+
+    .wordCarousel li {
+        font-size: 22px;
+    }
+}
+
+/* Experience */
+
+#section2{}
+
+.flex_head:hover{
+    margin-left: 10px;
+}
+
+.fa-briefcase{
+    margin-right: 15px;
+    padding: 5px;
+}
