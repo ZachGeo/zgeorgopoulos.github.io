@@ -4,30 +4,11 @@
 }
 
 #content-wrap {
-    padding-bottom: 5rem;
+    padding-bottom: 2.6rem;
 }
 
 .nav-link{
     font-size: larger;
-}
-
-#footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.8rem;
-}
-
-.icon_link a{
-    color: white;
-}
-
-.icon_link .fa-github:hover{
-    color: black;
-}
-
-.icon_link .fa-linkedin-in:hover{
-    color: #2867B2;
 }
 
 /* About */
@@ -62,29 +43,38 @@
     cursor: pointer;
     animation-duration: 500ms; 
 }
+.fa-python, .fa-hashtag, .fa-database, .fa-git, .fa-window-maximize, .fa-linux{
+    transition-duration: 0.8s;
+    transition-property: transform;
 
-.skill_icon .fa-python:hover{
+}
+
+.fa-python:hover, .fa-hashtag:hover, .fa-database:hover, .fa-git:hover, .fa-window-maximize:hover, .fa-linux:hover{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+.fa-python:hover{
     color: #4B8BBE;
 }
 
-.skill_icon .fa-hashtag:hover{
+.fa-hashtag:hover{
     color: black;
 }
 
-.skill_icon .fa-database:hover{
+.fa-database:hover{
     color: rgb(151, 92, 151);
 }
 
-.skill_icon .fa-git:hover{
+.fa-git:hover{
     color: #F1502F;
 }
 
-.skill_icon .fa-window-maximize:hover{
+.fa-window-maximize:hover{
     color: #143f63;
 }
 
-.skill_icon .fa-linux:hover{
-    color: rgb(238, 155, 53);
+.fa-linux:hover{
+    color: rgb(243, 148, 32);
 }
 
 .typewriter h2 {
@@ -268,7 +258,9 @@
 
 /* Experience */
 
-#section2{}
+#sec2{
+    background-color: #566c7a;
+}
 
 .flex_head:hover{
     margin-left: 10px;
@@ -277,4 +269,84 @@
 .fa-briefcase{
     margin-right: 15px;
     padding: 5px;
+}
+
+#experience_head{
+    color: white;
+}
+
+/* Projects */
+
+#sec3{
+    background-color: #fff;
+}
+
+.fa-laptop-code{
+    margin-right: 15px;
+    padding: 5px;
+}
+
+/* Contact */
+
+#sec4{
+    background-color:#2a4b49e3;
+}
+
+#contact_head{
+    color: #fff;
+}
+
+.fa-address-book{
+    margin-right: 15px;
+    padding: 5px;
+}
+
+.icon_link{
+    padding-bottom: 15px;
+}
+
+.icon_link a{
+    color: white;
+}
+
+.fa-envelope{
+    color: #fff;
+    cursor: pointer;
+}
+
+.fa-envelope:hover{
+    color: #EA4335;
+    transform: scale(1.2);
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.678);
+}
+
+.fa-github:hover{
+    color: black;
+    transform: scale(1.2);
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.678);
+}
+
+.fa-envelope, .fa-github, .fa-linkedin-in{
+    transition: all .2s ease-in-out;
+}
+
+.fa-linkedin-in:hover{
+    color: #2867B2;
+    transform: scale(1.2);
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.678);
+}
+
+/* Footer */
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    display: table;
+}
+
+#footer p {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
 }

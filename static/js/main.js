@@ -52,3 +52,11 @@ $(document).ready(function(){
   $(".fa-linux").hide();
   $(".fa-linux").fadeIn(3500);
 });
+
+// Contact
+
+$(document).ready(function(){
+  $(".fa-envelope").click(function(){
+    alert("Please contact me via email: zachageo95@gmail.com");
+  });
+});
