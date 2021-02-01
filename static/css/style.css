@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 #page-container {
     position: relative;
     min-height: 100vh;
@@ -117,7 +121,7 @@
 .about_p{
     font-family: Arial, sans-serif;
     font-style: normal;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .wordCarousel div {
@@ -155,7 +159,7 @@
 }
 
 /* iPhone 6, 6s, 7 & 8 */
-@media only screen 
+/* @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
@@ -173,10 +177,10 @@
     .wordCarousel li {
         font-size: 14px;
     }
-}
+} */
 
 /* iPhone X/XS */
-@media only screen 
+/* @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
@@ -194,10 +198,10 @@
     .wordCarousel li {
         font-size: 14px;
     }
-}
+} */
 
 /* Galaxy S5 */
-@media only screen 
+/* @media only screen 
     and (min-device-width: 360px) 
     and (max-device-height: 640px) 
     and (-webkit-device-pixel-ratio: 3)    
@@ -215,10 +219,10 @@
     .wordCarousel li {
         font-size: 14px;
     }
-}
+} */
 
 /* Galaxy S9 */
-@media only screen 
+/* @media only screen 
     and (min-device-width: 360px) 
     and (orientation: portrait){ 
 
@@ -234,10 +238,10 @@
     .wordCarousel li {
         font-size: 14px;
     }
-}
+} */
 
 /* iPad */
-@media only screen 
+/* @media only screen 
     and (min-device-width: 481px) 
     and (max-device-width: 1024px) 
     and (orientation:portrait) {
@@ -254,7 +258,7 @@
     .wordCarousel li {
         font-size: 22px;
     }
-}
+} */
 
 /* Experience */
 
@@ -275,6 +279,65 @@
     color: white;
 }
 
+.company_name{
+    overflow: hidden;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #fff;
+    cursor: default;
+    transition-duration: 1200ms;
+}
+
+.company_name:hover{
+    color: rgb(196, 253, 255);
+    font-size: 38px;
+}
+
+.company_name:before, .company_name:after {
+    background-color: #fff;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 40%;
+}
+
+.company_name:before{
+    right: 0.2em;
+    margin-left: -30%;
+}
+
+.company_name:after{
+    left: 0.2em;
+    margin-right: -30%;
+}
+
+#main_work_info, #work_details{
+    padding-right: 40px;
+}
+
+#main_work_info li, #work_details li{
+    color: #fff;
+    list-style: none;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.fa-caret-down{
+    cursor: pointer;
+}
+
+.fa-caret-down:hover{
+    color: rgb(44, 44, 44);
+}
+
+#work_details {
+    display: none;
+}
+
 /* Projects */
 
 #sec3{
@@ -289,7 +352,7 @@
 /* Contact */
 
 #sec4{
-    background-color:#2a4b49e3;
+    background-color:#2a4b49;
 }
 
 #contact_head{
@@ -301,6 +364,62 @@
     padding: 5px;
 }
 
+form{ 
+    max-width: 620px; 
+    margin: 40px auto; 
+}
+
+.feedback-input{
+    color:white;
+    font-family: Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid #fff;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+}
+
+.feedback-input:focus{ 
+    border: 2px solid #5a99c5e7; 
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+#honeypot{
+    display: none;
+}
+
+.send_message{
+    font-family: 'Courier New', Courier, monospace;;
+    width: 100%;
+    background:#5a99c5af;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 26px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+}
+
+.send_message:hover{
+    background:#396788;
+}
+
 .icon_link{
     padding-bottom: 15px;
 }
@@ -309,24 +428,13 @@
     color: white;
 }
 
-.fa-envelope{
-    color: #fff;
-    cursor: pointer;
-}
-
-.fa-envelope:hover{
-    color: #EA4335;
-    transform: scale(1.2);
-    text-shadow: 0 0 1px rgba(255, 255, 255, 0.678);
-}
-
 .fa-github:hover{
     color: black;
     transform: scale(1.2);
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.678);
 }
 
-.fa-envelope, .fa-github, .fa-linkedin-in{
+.fa-github, .fa-linkedin-in{
     transition: all .2s ease-in-out;
 }
 
@@ -334,6 +442,10 @@
     color: #2867B2;
     transform: scale(1.2);
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.678);
+}
+
+.thankyou_message{
+    display: none;
 }
 
 /* Footer */

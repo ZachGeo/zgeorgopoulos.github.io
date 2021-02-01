@@ -1,3 +1,28 @@
+var btns = $('#navbarContent .navbar-nav .nav-link');
+for(var i=0; i < btns.length; i++){
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName('active');
+    current[0].className = current[0].className.replace(' active', '');
+    this.className += ' active';
+  });
+}
+
+$(window).scroll(function () { 
+  var distance = $(window).scrollTop(); 
+  $('.page-section').each(function (i) { 
+
+      if ($(this).position().top  
+          <= distance + 20) { 
+            
+              $('.navbar-nav a.active') 
+                  .removeClass('active'); 
+
+              $('.navbar-nav a').eq(i) 
+                  .addClass('active'); 
+      } 
+  }); 
+}).scroll(); 
+
 $(document).ready(function(){
     $('i[data-toggle="tooltip"]').tooltip({
         animated: 'fade',
@@ -53,10 +78,10 @@ $(document).ready(function(){
   $(".fa-linux").fadeIn(3500);
 });
 
-// Contact
+// Experience
 
 $(document).ready(function(){
-  $(".fa-envelope").click(function(){
-    alert("Please contact me via email: zachageo95@gmail.com");
+  $(".fa-caret-down").on('click', function(){
+    $("#work_details").slideToggle('slow');
   });
 });
