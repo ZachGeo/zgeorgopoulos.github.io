@@ -352,21 +352,41 @@ html{
 .card{
     border-radius: 10px;
     box-shadow: 1px 1px 11px 1px rgb(151, 151, 151);
-    margin-top: 12px;
+    margin: 12px 0 10px 0;
+    transition: 1000ms;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 11px 5px rgba(15, 119, 145, 0.349);
 }
 
 .card-header{
     color: #fff;
-    background-color: rgb(72, 102, 121)
+    background-color: rgb(72, 102, 121);
 }
 
 .card-body{
     background-color: rgba(238, 238, 238, 0.8);
 }
 
-.btn-info{
-    font-size: 13px;
-    margin-bottom: -18px
+.btn {
+    color: #fff;
+    background-color:  rgb(72, 102, 121);
+    margin-bottom: -10px;
+    border-radius: 20px;
+    font-weight: 620;
+    transition: 500ms;
+}
+
+.btn:hover{
+    color: #fff;
+    background-color: rgb(67, 144, 192);
+}
+
+.technology_info span{
+    text-decoration: underline;
+    font-weight: 550;
 }
 
 /* Contact */
