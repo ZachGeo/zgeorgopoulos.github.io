@@ -23,6 +23,7 @@ $(window).scroll(function () {
   }); 
 }).scroll(); 
 
+// Tooltip Section
 var isMobile = false; 
 
 if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) 
@@ -56,16 +57,28 @@ if (isMobile) {
   });
 }
 
-$(document).ready(function(){
-  $(".flex_head").hide();
-  $(".flex_head").fadeIn(2000);
-});
-
+// Fading about text 
 $(document).ready(function(){
   $(".about_p").hide();
-  $(".about_p").fadeIn(1000);
+  $(".about_p").fadeIn(2000);
 });
 
+$(document).ready(function(){
+  $("#experience_section").hide();
+  $("#experience_section").fadeIn(2000);
+});
+
+$(document).ready(function(){
+  $("#section3").hide();
+  $("#section3").fadeIn(2000);
+});
+
+$(document).ready(function(){
+  $("#section4").hide();
+  $("#section4").fadeIn(2000);
+});
+
+// Fading icons - Skills section
 $(document).ready(function(){
   $(".fa-python").hide();
   $(".fa-python").fadeIn(1000);
@@ -96,7 +109,7 @@ $(document).ready(function(){
   $(".fa-linux").fadeIn(3500);
 });
 
-// Experience
+// Experience Section
 
 $(document).ready(function(){
   $(".fa-caret-down").on('click', function(){
