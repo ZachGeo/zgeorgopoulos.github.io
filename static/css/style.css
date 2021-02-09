@@ -35,7 +35,7 @@ html{
     font-weight: 600;
 }
 
-#about_icon{
+#section_icon{
     margin-right: 15px;
     padding: 5px;
 }
@@ -256,12 +256,9 @@ html{
     background-color: #566c7a;
 }
 
-.flex_head:hover{
-    margin-left: 10px;
-}
-
 .fa-briefcase{
     margin-right: 15px;
+    margin-left: 8px;
     padding: 5px;
 }
 
@@ -506,14 +503,14 @@ textarea {
 @media only screen and (max-width : 1024px) {
     .typewriter h2 {
         animation: 
-          typing 3.5s steps(80, end),
-          blink-caret .3s step-end 6;
+          typing 3.5s steps(90, end),
+          blink-caret .3s step-end 12;
     }
     
     /* The typing effect */
     @keyframes typing {
         from { width: 0 }
-        to { width: 80% }
+        to { width: 30% }
     }
 }
 
@@ -571,4 +568,131 @@ textarea {
     .nav-link{
         font-size: small;
     }
+}
+
+/* Smartphones - Tablets */
+@media only screen and (max-width : 375px) and (max-height: 812px) {
+
+    .navbar-toggler .navbar-toggler-icon{
+        height: 16px;
+    }
+
+    .nav-link{
+        font-size: medium;
+    }
+
+    .typewriter h2 {
+        animation: 
+          typing 3.5s steps(80, end),
+          blink-caret .3s step-end 12;
+    }
+    
+    /* The typing effect */
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+    
+    #section_head{
+        font-size: 32px;
+    }
+
+    .about_p{
+        font-size: 16px;
+    }
+    
+    #section_icon{ 
+        padding-bottom: 14px;
+    }
+
+    .wordCarousel li {
+        font-size: 14px;
+    }
+
+    #main_work_info li, #work_details li{
+        font-size: 16px;
+    }
+
+    .card-text{
+        font-size: 16px;
+    }
+
+    #privacy_label{
+        font-size: 15px;
+    }
+    .fa-github{
+        color: black;
+        text-shadow: 0 1px 1px rgb(255, 255, 255);
+    }
+        
+    .fa-linkedin-in{
+        color: #2867B2;
+        text-shadow: 0 1px 1px rgb(255, 255, 255);
+    }
+}
+
+@media only screen and (max-width : 414px) and (max-height: 896px) {
+    html{
+        scroll-padding-top: 60px;
+    }
+    
+    .navbar-toggler .navbar-toggler-icon{
+        height: 28px;
+    }
+
+    .nav-link{
+        font-size: large;
+    }
+
+    .typewriter h2 {
+        animation: 
+          typing 3.5s steps(80, end),
+          blink-caret .3s step-end 12;
+    }
+    
+    /* The typing effect */
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+    
+    #section_head{
+        font-size: 30px;
+    }
+
+    #section_icon{ 
+        padding-bottom: 18px;
+    }
+
+    .wordCarousel li {
+        font-size: 16px;
+    }
+
+    #privacy_label{
+        font-size: 15px;
+    }
+
+    .fa-github{
+        color: black;
+        text-shadow: 0 1px 1px rgb(255, 255, 255);
+    }
+        
+    .fa-linkedin-in{
+        color: #2867B2;
+        text-shadow: 0 1px 1px rgb(255, 255, 255);
+    }
+}
+
+@media only screen and (max-width : 375px) and (max-height: 667px) {
+    .wordCarousel li {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width : 834px) and (max-height: 1112px) {
+
+}
+
+@media only screen and (max-width : 1024px) and (max-height: 1366px) {
+
 }

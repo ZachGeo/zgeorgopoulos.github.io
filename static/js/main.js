@@ -10,10 +10,8 @@ for(var i=0; i < btns.length; i++){
 $(window).scroll(function () { 
   var distance = $(window).scrollTop(); 
   $('.page-section').each(function (i) { 
-
       if ($(this).position().top  
           <= distance + 50) { 
-            
               $('.navbar-nav a.active') 
                   .removeClass('active'); 
 
@@ -121,7 +119,9 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("form").submit(function(){
-    alert("\nThanks for contacting me! I will respond in due time.");
-    $('.gform')[0].reset();
+    setTimeout(function(){
+      alert("\nThanks for contacting me! I will respond in due time.");
+      $('.gform')[0].reset();
+    }, 2000);
   });
 });
