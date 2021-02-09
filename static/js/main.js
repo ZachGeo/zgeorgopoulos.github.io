@@ -116,3 +116,12 @@ $(document).ready(function(){
     $("#work_details").slideToggle('slow');
   });
 });
+
+// Contact Section
+
+$(document).ready(function(){
+  $("form").submit(function(){
+    alert("\nThanks for contacting me! I will respond in due time.");
+    $('.gform')[0].reset();
+  });
+});
