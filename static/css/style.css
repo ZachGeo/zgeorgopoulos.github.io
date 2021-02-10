@@ -622,12 +622,12 @@ textarea {
     }
     .fa-github{
         color: black;
-        text-shadow: 0 1px 1px rgb(255, 255, 255);
+        text-shadow: 0 0 1px rgb(255, 255, 255);
     }
         
     .fa-linkedin-in{
         color: #2867B2;
-        text-shadow: 0 1px 1px rgb(255, 255, 255);
+        text-shadow: 0 0 1px rgb(255, 255, 255);
     }
 }
 
@@ -674,16 +674,26 @@ textarea {
 
     .fa-github{
         color: black;
-        text-shadow: 0 1px 1px rgb(255, 255, 255);
+        text-shadow: 0 0 1px rgb(255, 255, 255);
     }
         
     .fa-linkedin-in{
         color: #2867B2;
-        text-shadow: 0 1px 1px rgb(255, 255, 255);
+        text-shadow: 0 0 1px rgb(255, 255, 255);
     }
 }
 
 @media only screen and (max-width : 375px) and (max-height: 667px) {
+    .fa-github{
+        color: black;
+        text-shadow: 0 0 1px rgb(255, 255, 255);
+    }
+        
+    .fa-linkedin-in{
+        color: #2867B2;
+        text-shadow: 0 0 1px rgb(255, 255, 255);
+    }
+
     .wordCarousel li {
         font-size: 14px;
     }
@@ -691,8 +701,243 @@ textarea {
 
 @media only screen and (max-width : 834px) and (max-height: 1112px) {
 
+    .navbar-toggler .navbar-toggler-icon{
+        height: 40px;
+    }
+
+    .nav-link{
+        font-size: xx-large;
+    }
+
+    form{ 
+        margin: 80px auto; 
+    }
+
+    .feedback-input{
+        margin-bottom: 25px;
+    }
+
+    textarea {
+      height: 180px;
+    }
+
+    #privacy_label{
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    .send_message{
+        font-size: 28px;
+    }
+
+    .fa-github{
+        color: black;
+        text-shadow: 0 0 1px rgb(255, 255, 255);
+        margin-bottom: 20px;
+    }
+        
+    .fa-linkedin-in{
+        color: #2867B2;
+        text-shadow: 0 0 1px rgb(255, 255, 255);
+        margin-bottom: 20px;
+    }
+
+    #footer{
+        height: 3.9rem;
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width : 1024px) and (max-height: 1366px) {
 
+    .navbar-toggler .navbar-toggler-icon{
+        height: 40px;
+    }
+
+    .nav-link{
+        font-size: xx-large;
+    }
+
+    .col-lg-6{
+        width: 50%;
+    }
+
+    form{ 
+        margin: 80px auto; 
+    }
+
+    .feedback-input{
+        margin-bottom: 25px;
+    }
+
+    textarea {
+      height: 240px;
+    }
+
+    #privacy_label{
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    .send_message{
+        font-size: 28px;
+    }
+
+    .fa-github{
+        color: black;
+        text-shadow: 0 0 1px rgb(255, 255, 255);
+        margin-bottom: 20px;
+    }
+        
+    .fa-linkedin-in{
+        color: #2867B2;
+        text-shadow: 0 0 1px rgb(255, 255, 255);
+        margin-bottom: 20px;
+    }
+
+    #footer{
+        height: 3.9rem;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width : 360px) and (max-height: 718px) {
+
+    .wordCarousel li {
+        font-size: 12px;
+    }
+
+    .fa-github{
+        color: black;
+        text-shadow: 0 0 1px rgb(255, 255, 255);
+    }
+        
+    .fa-linkedin-in{
+        color: #2867B2;
+        text-shadow: 0 0 1px rgb(255, 255, 255);
+    }
+}
+
+@media only screen and (max-width : 360px) and (max-height: 740px) {
+    .navbar-toggler .navbar-toggler-icon{
+        height: 24px;
+    }
+
+    .nav-link{
+        font-size: medium;
+    }
+
+    .wordCarousel li {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width : 600px) and (max-height: 1024px) {
+    .navbar-toggler .navbar-toggler-icon{
+        height: 30px;
+    }
+
+    .nav-link{
+        font-size: large;
+    }
+
+    form{ 
+        margin: 80px auto; 
+    }
+
+    .feedback-input{
+        margin-bottom: 20px;
+    }
+
+    textarea {
+      height: 180px;
+    }
+
+    .send_message{
+        font-size: 28px;
+    }
+
+    .fa-github{
+        color: black;
+        text-shadow: 0 0 1px rgb(255, 255, 255);
+    }
+        
+    .fa-linkedin-in{
+        color: #2867B2;
+        text-shadow: 0 0 1px rgb(255, 255, 255);
+    }
+}
+
+@media only screen and (max-width : 600px) and (max-height: 960px) {
+
+    .nav-link{
+        font-size: large;
+    }
+
+    .col-lg-6{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width : 1024px) and (max-height: 1440px) {
+    
+    .nav-link{
+        font-size: xx-large;
+    }
+
+    form{ 
+        margin: 80px auto; 
+    }
+
+    .feedback-input{
+        margin-bottom: 25px;
+    }
+
+    textarea {
+      height: 240px;
+    }
+
+    .fa-github{
+        color: black;
+        text-shadow: 0 0 1px rgb(255, 255, 255);
+    }
+        
+    .fa-linkedin-in{
+        color: #2867B2;
+        text-shadow: 0 0 1px rgb(255, 255, 255);
+    }
+}
+
+@media only screen and (max-width : 1024px) and (max-height: 1440px) {
+    
+    .col-lg-6{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width : 480px) and (max-height: 800px) {
+    
+    .navbar-toggler .navbar-toggler-icon{
+        height: 28px;
+    }
+
+    .nav-link{
+        font-size: large;
+    }
+
+    .wordCarousel li {
+        font-size: 16px;
+    }
+    
+    .fa-github{
+        color: black;
+        text-shadow: 0 0 1px rgb(255, 255, 255);
+    }
+        
+    .fa-linkedin-in{
+        color: #2867B2;
+        text-shadow: 0 0 1px rgb(255, 255, 255);
+    }
+    
 }

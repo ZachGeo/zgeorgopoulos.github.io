@@ -117,6 +117,13 @@ $(document).ready(function(){
 
 // Contact Section
 
+$(document).ready(function() {
+  //This condition will check if form with id 'contact-form' is exist then only form reset code will execute.
+  if($('.gform').length>0){
+      $('.gform')[0].reset(); 
+  }
+});
+
 $(document).ready(function(){
   $("form").submit(function(){
     setTimeout(function(){
