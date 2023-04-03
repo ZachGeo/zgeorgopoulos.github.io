@@ -49,16 +49,17 @@ html{
     cursor: pointer;
     animation-duration: 500ms; 
 }
-.fa-python, .fa-terminal, .fa-database, .fa-git, .fa-window-maximize, .fa-linux{
+.fa-python, .fa-terminal, .fa-cubes, .fa-project-diagram, .fa-yammer, .fa-cloud, .fa-aws, .fa-google, .fa-jenkins, .fa-database, .fa-git, .fa-window-maximize, .fa-linux{
     transition-duration: 0.8s;
     transition-property: transform;
 
 }
 
-.fa-python:hover, .fa-terminal:hover, .fa-database:hover, .fa-git:hover, .fa-window-maximize:hover, .fa-linux:hover{
+.fa-python:hover, .fa-terminal:hover, .fa-cubes:hover, .fa-project-diagram:hover, .fa-yammer:hover, .fa-cloud:hover, .fa-aws:hover, .fa-google:hover, .fa-jenkins:hover, .fa-database:hover, .fa-git:hover, .fa-linux:hover{
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
 }
+
 .fa-python:hover{
     color: #4B8BBE;
 }
@@ -81,6 +82,35 @@ html{
 
 .fa-linux:hover{
     color: rgb(243, 148, 32);
+}
+
+.fa-cubes:hover{
+    color: rgb(148, 57, 125);
+}
+
+.fa-project-diagram:hover{
+    color: rgb(238, 141, 63);
+}
+
+.fa-yammer:hover{
+    color: rgb(126, 85, 85);
+}
+
+.fa-aws:hover{
+    color: rgb(241, 153, 38);
+}
+
+.fa-google:hover{
+    color: rgb(22, 35, 212);
+}
+
+
+.fa-cloud:hover{
+    color: rgb(46, 83, 206);
+}
+
+.fa-jenkins:hover{
+    color: rgb(202, 28, 28);
 }
 
 .typewriter h2 {
