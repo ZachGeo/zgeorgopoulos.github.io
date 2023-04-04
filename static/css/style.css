@@ -310,8 +310,17 @@ html{
     background-color:#2a4b49;
 }
 
+#section4{
+    padding-top: 18%;
+    padding-bottom: 10%;
+}
+
 #contact_head{
     color: #fff;
+}
+
+#contact_icons {
+    gap: 12%;
 }
 
 .fa-address-book{
@@ -319,64 +328,8 @@ html{
     padding: 5px;
 }
 
-form{ 
-    max-width: 620px; 
-    margin: 40px auto; 
-}
-
-.feedback-input{
-    color:white;
-    font-family: Arial, sans-serif;
-    font-weight:500;
-    font-size: 18px;
-    border-radius: 5px;
-    line-height: 22px;
-    background-color: transparent;
-    border:2px solid #fff;
-    transition: all 0.3s;
-    padding: 13px;
-    margin-bottom: 15px;
-    width:100%;
-    box-sizing: border-box;
-    outline:0;
-}
-
-.feedback-input:focus{ 
-    border: 2px solid #5a99c5e7; 
-}
-
-textarea {
-  height: 150px;
-  line-height: 150%;
-  resize: vertical;
-}
-
-#honeypot{
-    display: none;
-}
-
-.send_message{
-    font-family: 'Courier New', Courier, monospace;;
-    width: 100%;
-    background:#5a99c5af;
-    border-radius: 5px;
-    border: 0;
-    cursor: pointer;
-    color: white;
-    font-size: 26px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    transition: all 0.3s;
-    margin-top: -4px;
-    font-weight: 700;
-}
-
-.send_message:hover{
-    background:#396788;
-}
-
 .icon_link{
-    padding-bottom: 15px;
+    padding-bottom: 10%;
 }
 
 .icon_link a{
@@ -389,12 +342,18 @@ textarea {
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.678);
 }
 
-.fa-github, .fa-linkedin-in{
+.fa-github, .fa-linkedin-in, .fa-envelope{
     transition: all .2s ease-in-out;
 }
 
 .fa-linkedin-in:hover{
     color: #2867B2;
+    transform: scale(1.2);
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.678);
+}
+
+.fa-envelope:hover{
+    color: #bd3232;
     transform: scale(1.2);
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.678);
 }
@@ -411,10 +370,6 @@ textarea {
 #privacy_label{
     color: #fff;
     text-align: left;
-}
-
-#dummyframe{
-    display: none;
 }
 
 /* Footer */
@@ -535,7 +490,7 @@ textarea {
         height: 15rem;
     }      
 
-    .fa-github, .fa-linkedin-in{
+    .fa-github, .fa-linkedin-in, .fa-envelope{
         margin-bottom: 2rem;
         margin-top: 2rem;
     }
@@ -572,7 +527,7 @@ textarea {
         height: 18rem;
     }      
 
-    .fa-github, .fa-linkedin-in{
+    .fa-github, .fa-linkedin-in, .fa-envelope{
         margin-bottom: 3.5rem;
         margin-top: 2.5rem;
     }
