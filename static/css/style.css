@@ -229,11 +229,11 @@ html{
     margin-right: -30%;
 }
 
-#main_work_info, #work_details{
+#main_work_info, #work_details_1, #work_details_2, #work_details_3, #work_details_4{
     padding-right: 40px;
 }
 
-#main_work_info li, #work_details li{
+#main_work_info li, #work_details_1, #work_details_2, #work_details_3, #work_details_4 li{
     color: #fff;
     list-style: none;
     font-family: Arial, sans-serif;
@@ -249,7 +249,7 @@ html{
     color: rgb(44, 44, 44);
 }
 
-#work_details {
+#work_details_1,  #work_details_2, #work_details_3, #work_details_4{
     display: none;
 }
 

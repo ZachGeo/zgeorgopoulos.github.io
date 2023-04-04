@@ -140,8 +140,27 @@ $(document).ready(function(){
 // Experience Section
 
 $(document).ready(function(){
-  $(".fa-caret-down").on('click', function(){
-    $("#work_details").slideToggle('slow');
+  $("#pointer_1").on('click', function(){
+    $("#work_details_1").slideToggle('slow');
+  });
+});
+
+
+$(document).ready(function(){
+  $("#pointer_2").on('click', function(){
+    $("#work_details_2").slideToggle('slow');
+  });
+});
+
+$(document).ready(function(){
+  $("#pointer_3").on('click', function(){
+    $("#work_details_3").slideToggle('slow');
+  });
+});
+
+$(document).ready(function(){
+  $("#pointer_4").on('click', function(){
+    $("#work_details_4").slideToggle('slow');
   });
 });
 
