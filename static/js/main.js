@@ -84,34 +84,83 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $(".fa-terminal").hide();
-  $(".fa-terminal").fadeIn(1500);
+  $(".fa-terminal").fadeIn(1250);
 });
 
 $(document).ready(function(){
-  $(".fa-database").hide();
-  $(".fa-database").fadeIn(2000);
+  $(".fa-cubes").hide();
+  $(".fa-cubes").fadeIn(1500);
 });
 
 $(document).ready(function(){
-  $(".fa-git").hide();
-  $(".fa-git").fadeIn(2500);
+  $(".fa-project-diagram").hide();
+  $(".fa-project-diagram").fadeIn(1750);
 });
 
 $(document).ready(function(){
-  $(".fa-window-maximize").hide();
-  $(".fa-window-maximize").fadeIn(3000);
+  $(".fa-yammer").hide();
+  $(".fa-yammer").fadeIn(2000);
 });
 
 $(document).ready(function(){
   $(".fa-linux").hide();
-  $(".fa-linux").fadeIn(3500);
+  $(".fa-linux").fadeIn(2250);
+});
+
+$(document).ready(function(){
+  $(".fa-cloud").hide();
+  $(".fa-cloud").fadeIn(2500);
+});
+
+$(document).ready(function(){
+  $(".fa-aws").hide();
+  $(".fa-aws").fadeIn(2750);
+});
+
+$(document).ready(function(){
+  $(".fa-google").hide();
+  $(".fa-google").fadeIn(3000);
+});
+
+$(document).ready(function(){
+  $(".fa-jenkins").hide();
+  $(".fa-jenkins").fadeIn(3250);
+});
+
+$(document).ready(function(){
+  $(".fa-database").hide();
+  $(".fa-database").fadeIn(3500);
+});
+
+$(document).ready(function(){
+  $(".fa-git").hide();
+  $(".fa-git").fadeIn(4000);
 });
 
 // Experience Section
 
 $(document).ready(function(){
-  $(".fa-caret-down").on('click', function(){
-    $("#work_details").slideToggle('slow');
+  $("#pointer_1").on('click', function(){
+    $("#work_details_1").slideToggle('slow');
+  });
+});
+
+
+$(document).ready(function(){
+  $("#pointer_2").on('click', function(){
+    $("#work_details_2").slideToggle('slow');
+  });
+});
+
+$(document).ready(function(){
+  $("#pointer_3").on('click', function(){
+    $("#work_details_3").slideToggle('slow');
+  });
+});
+
+$(document).ready(function(){
+  $("#pointer_4").on('click', function(){
+    $("#work_details_4").slideToggle('slow');
   });
 });
 

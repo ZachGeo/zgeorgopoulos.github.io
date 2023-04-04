@@ -49,16 +49,17 @@ html{
     cursor: pointer;
     animation-duration: 500ms; 
 }
-.fa-python, .fa-terminal, .fa-database, .fa-git, .fa-window-maximize, .fa-linux{
+.fa-python, .fa-terminal, .fa-cubes, .fa-project-diagram, .fa-yammer, .fa-cloud, .fa-aws, .fa-google, .fa-jenkins, .fa-database, .fa-git, .fa-window-maximize, .fa-linux{
     transition-duration: 0.8s;
     transition-property: transform;
 
 }
 
-.fa-python:hover, .fa-terminal:hover, .fa-database:hover, .fa-git:hover, .fa-window-maximize:hover, .fa-linux:hover{
+.fa-python:hover, .fa-terminal:hover, .fa-cubes:hover, .fa-project-diagram:hover, .fa-yammer:hover, .fa-cloud:hover, .fa-aws:hover, .fa-google:hover, .fa-jenkins:hover, .fa-database:hover, .fa-git:hover, .fa-linux:hover{
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
 }
+
 .fa-python:hover{
     color: #4B8BBE;
 }
@@ -81,6 +82,35 @@ html{
 
 .fa-linux:hover{
     color: rgb(243, 148, 32);
+}
+
+.fa-cubes:hover{
+    color: rgb(148, 57, 125);
+}
+
+.fa-project-diagram:hover{
+    color: rgb(238, 141, 63);
+}
+
+.fa-yammer:hover{
+    color: rgb(126, 85, 85);
+}
+
+.fa-aws:hover{
+    color: rgb(241, 153, 38);
+}
+
+.fa-google:hover{
+    color: rgb(22, 35, 212);
+}
+
+
+.fa-cloud:hover{
+    color: rgb(46, 83, 206);
+}
+
+.fa-jenkins:hover{
+    color: rgb(202, 28, 28);
 }
 
 .typewriter h2 {
@@ -132,20 +162,20 @@ html{
 }
 
 .flip4 { 
-    animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; 
+    animation: flip4 15s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; 
 }
 
 @keyframes flip4 {
-    0% { margin-top: -360px; }
-    5% { margin-top: -270px; }
-    25% { margin-top: -270px; }
-    30% { margin-top: -180px; }
-    50% { margin-top: -180px; }
-    55% { margin-top: -90px; }
-    75% { margin-top: -90px; }
-    80% { margin-top: 0px; }
-    99.99% { margin-top: 0px; }
-    100% { margin-top: -270px; }
+    0% { margin-top: -450px; }
+    5% { margin-top: -360px; }
+    25% { margin-top: -360px; }
+    30% { margin-top: -270px; }
+    50% { margin-top: -270px; }
+    55% { margin-top: -180px; }
+    75% { margin-top: -180px; }
+    80% { margin-top: -90px; }
+    99.99% { margin-top: -90px; }
+    100% { margin-top: -360px; }
 }
 
 /* Experience */
@@ -199,11 +229,11 @@ html{
     margin-right: -30%;
 }
 
-#main_work_info, #work_details{
+#main_work_info, #work_details_1, #work_details_2, #work_details_3, #work_details_4{
     padding-right: 40px;
 }
 
-#main_work_info li, #work_details li{
+#main_work_info li, #work_details_1, #work_details_2, #work_details_3, #work_details_4 li{
     color: #fff;
     list-style: none;
     font-family: Arial, sans-serif;
@@ -219,7 +249,7 @@ html{
     color: rgb(44, 44, 44);
 }
 
-#work_details {
+#work_details_1,  #work_details_2, #work_details_3, #work_details_4{
     display: none;
 }
 
