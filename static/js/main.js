@@ -163,21 +163,3 @@ $(document).ready(function(){
     $("#work_details_4").slideToggle('slow');
   });
 });
-
-// Contact Section
-
-$(document).ready(function() {
-  //This condition will check if form with id 'contact-form' is exist then only form reset code will execute.
-  if($('.gform').length>0){
-      $('.gform')[0].reset(); 
-  }
-});
-
-$(document).ready(function(){
-  $("form").submit(function(){
-    setTimeout(function(){
-      alert("\nThanks for contacting me! I will respond in due time.");
-      $('.gform')[0].reset();
-    }, 2000);
-  });
-});
