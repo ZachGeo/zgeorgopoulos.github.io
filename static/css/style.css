@@ -116,7 +116,7 @@ html{
 .typewriter h2 {
     color: #fff;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .10em solid transparent; /* The typwriter cursor */
+    border-right: .15em solid transparent; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     animation: 
@@ -139,7 +139,7 @@ html{
 .about_p{
     font-family: Arial, sans-serif;
     font-style: normal;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .wordCarousel div {
